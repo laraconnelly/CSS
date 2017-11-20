@@ -1,0 +1,82 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@page {
+	size: 8.5in 11in;
+	margin: 1in;
+	size: portrait;
+}
+
+#container {
+	font-family: Times, Georgia, serif;
+}
+
+#playLogo{
+	display: none;
+}
+
+p {
+	font-size: 13pt;
+}
+
+#blogSteps p, #amazonPicks p, #mySpace p, #postHurry p {
+	text-indent: 20px;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+h1, h2, h3 {
+	font-size: 15pt;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	margin-bottom: 5px;
+	margin-top: 10px;	
+}
+
+h4 {
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	font-size: 10pt;
+	margin-top: 5px;		
+}
+#blogImage img {
+	display: none;
+}
+
+#blogOL {
+	list-style: none;
+	counter-reset: itemCount; /* Initiate a counter */
+	margin-top: 3px;
+}
+
+#blogOL li p:before {
+	content: counter(itemCount) ') ';
+	counter-increment: itemCount;
+}
+
+#blogOL p {
+	text-indent: 0;
+}
+
+#mySpaceTips_Right p:first-of-type {
+	text-indent: 0;
+}
+
+#Hurry_OL {
+	list-style: none;
+	counter-reset: itemCount; /* Initiate a counter */
+	margin-top: 3px;
+}
+
+#Hurry_OL_Left p:before, #Hurry_OL_Middle p:before, #Hurry_OL_Right p:before {
+	content: counter(itemCount) ') ';
+	counter-increment: itemCount;
+}
+
+#Hurry_OL p {
+	text-indent: 0;
+}

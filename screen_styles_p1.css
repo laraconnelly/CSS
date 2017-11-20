@@ -1,0 +1,241 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 800px;
+	margin: auto;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	color: #030303;
+}
+
+/*LEFT Side of Page*/
+#howTo {
+	position: relative;
+	float: left;
+	width: 320px;
+	height: 935px;
+}
+
+#howToLogo {
+	position: relative;
+	right: 45px;
+	width: 40px;
+	border: solid black 2px;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 80%;
+	font-weight: bold;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+#howToLogo p:first-line {
+	font-size: .5em;
+}
+
+#recoverTunes {
+	padding-left: 75px;
+	padding-right: 15px;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 85%;
+	margin-bottom: 5px;
+}
+
+
+/*OL - Recover Tunes section*/
+#tunesOL {
+	margin-top: 20px;
+	list-style-position: inside;
+	font-weight: bold;	
+}
+
+#tunesOL li{
+	text-transform: uppercase;
+	font-size: .6em;
+	margin-bottom: 8px;
+	position: relative;
+	line-height: 1.3em;
+}
+
+#tunesOL li:before { 
+	display: inline-block; 
+	font-weight: bold;
+	width: 7px; 
+	position: absolute; 
+	left: 4px; 
+	content: ')'; 
+	text-align: center; 
+}
+
+#tunesOL li p {
+	display: inline;
+	font-weight: normal;
+}
+/*End OL - Recover*/
+
+#beats {
+	background-color: #474747;
+	color: #e0e0e0;
+	margin-top: 46px;
+	padding: 10px 30px 10px 75px;
+	text-transform: uppercase;
+	font-size: 1em;
+	line-height: 95%;
+	position: absolute;
+	bottom: 0;
+}
+
+/*RIGHT Side of Page*/
+#playlist {
+	float: right;
+	width: 440px;
+	height: 930px;
+	border-left: #bebebe solid 10px;
+	border-bottom: #bebebe solid 5px;
+	padding-left: 15px;
+}
+
+h1{
+	font-size: 2.7em;
+}
+
+/*OL - DJ Tips section*/
+#djTips_OL {
+	counter-reset: itemCount; /* Initiate a counter */
+	list-style: none;
+	position: relative
+}
+
+.djTips_OL_left, .djTips_OL_right {
+	position: relative;	/*to set absolute positioning of li:before*/
+	width: 210px;
+	margin-top: 10px;	
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	font-size: .7em;
+	line-height: 110%;
+	word-spacing: .03em;
+}
+
+.djTips_OL_right {
+	top: -177px;
+	left: 220px;
+}
+
+.djTips_OL_left:before, .djTips_OL_right:before {
+	content: counter(itemCount);
+	counter-increment: itemCount;
+	position: absolute;
+	top: 9px;
+	font-size: 3em;
+	color: #bebebe;
+}
+
+.djTips_OL_left p, .djTips_OL_right p {
+	display: inline-block;
+	padding-left: 27px;
+}
+
+.djTips_OL_right li {
+	padding-left: 5px;
+}
+/*End OL - DJ Tips*/
+
+/*BOTTOM of Page*/
+#tickets {
+	clear: both;
+}
+
+#imgTickets {
+	margin: auto;
+}
+
+/*OL - Tickets section*/
+#scoreTickets_Left {
+	float: left;
+	width: 190px;
+	padding-left: 75px;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+#scoreTickets_Right {
+	float: right;
+	width: 190px;
+	margin-top: 20px;
+}
+
+#scoreTickets_Left ol, #scoreTickets_Right ol {
+	list-style-position: inside;
+	list-style: none;	
+	font-weight: bold;
+}
+
+#scoreTickets_Left ol {
+	counter-reset: itemCount;
+	list-style: none;
+}
+
+#scoreTickets_Right ol {
+	counter-reset: itemCount 2; /* Initiate a counter to 2 as we are continuing the list*/	
+}
+
+#scoreTickets_Left li, #scoreTickets_Right li{
+	font-size: .7em;
+	font-size: .7em;
+	margin-bottom: 8px;
+	position: relative;
+	line-height: 1.3em;
+}
+
+#scoreTickets_Left li:before, #scoreTickets_Right li:before { 
+	display: inline-block; 
+	font-weight: bold;
+	width: 7px; 
+	text-align: center; 
+	position: relative;
+	left: -1px;
+	content: counter(itemCount)')' ;
+	counter-increment: itemCount;
+}
+
+#scoreTickets_Left li p, #scoreTickets_Right li p {
+	display: inline;
+	font-weight: normal;
+	margin-left: 2px;
+}
+/*End OL - Tickets*/
+
+
+.lowerI {
+	text-transform: lowercase;
+}
+.greyText {
+	text-transform: uppercase;
+	font-size: .6em;
+	font-weight: bold;
+	color: #B3B3B3;
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+.boldUpperText {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	font-size: .9em;
+}
+
+.blackText {
+	color: #030303;
+}

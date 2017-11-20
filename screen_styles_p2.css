@@ -1,0 +1,239 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 800px;
+	margin: auto;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	color: #030303;	
+}
+
+#playLogo p {
+	display:block;
+	float: right;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #B3B3B3; 
+	background-color: yellow;
+	height: 35px;
+	width: 50px;
+	padding-top: 15px;
+	border-radius: 20em;
+}
+
+/*RIGHT side*/
+#blog {
+	position: relative;
+	float: left;
+	width: 290px;
+	height: 1050px;
+	border-right: #bebebe solid 10px;
+	border-top: #bebebe solid 5px;
+	margin-top: 50px;
+}
+
+#blogSteps {
+	padding-left: 40px;
+	padding-right: 30px;
+}
+
+#blog h3 {
+	font-size: 1em;
+	margin-bottom: 5px;
+	margin-top: 4px;
+	width: 120px;
+}
+
+/*OL - Blog Section*/
+#blogOL {
+	margin-top: 10px;
+}
+#blogOL {
+	counter-reset: itemCount; /* Initiate a counter */
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+#blogOL li p:before {
+	float: left;
+	display: inline-block;
+	content: counter(itemCount);
+	counter-increment: itemCount;
+	background-color: #474747;
+	color: #e0e0e0;
+	height: 20px;
+	width: 20px;
+	font-size: 1em;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 20em;
+	margin-right: 4px;
+}
+
+#blogOL li p {
+	display: inline;
+}
+
+#blogOL li {
+	font-size: .7em;
+	line-height: 150%;
+	margin-bottom: 2px;
+}
+/*End OL - Blog*/
+
+#blogImage {
+	margin-left: 5px;
+	position: absolute;
+	bottom: 0px;
+}
+/*END RIGHT side*/
+
+
+/*LEFT side*/
+#xtraMedia {
+	float: right;
+	width: 450px;
+	margin-top: 20px;
+	padding-right: 30px;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+
+#amazonPicks p {
+	font-size: .8em;
+}
+
+#mySpace {
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 2em;
+	width: 300px;
+	line-height: 90%;
+}
+
+#mySpaceIntro {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: .8em;
+}
+
+#mySpaceTips_Left {
+	float: left;
+	width: 200px;
+}
+
+#mySpaceTips_Right {
+	float: right;
+	width: 200px;
+}
+
+#mySpaceTips_Right p, #mySpaceTips_Left p {
+	font-size: .7em;
+	line-height: 1.2em;
+	margin-bottom: 3px;
+}
+
+h4 {
+	font-size: .7em;
+	text-transform: uppercase;
+}
+
+#mySpaceWebLinks_UL {
+	list-style-type: none;
+	font-size: .7em;
+	color: #B3B3B3;
+	
+}
+
+#postHurry {
+	clear: both;
+	padding-top: 20px;
+}
+
+#postHurry p {
+	padding-bottom: 20px;
+}
+
+/*OL Start - Hurry*/
+#Hurry_OL {
+	position: relative;
+	width: 450px;
+	counter-reset: itemCount; /* Initiate a counter */
+	list-style-type: none;
+}
+
+#Hurry_OL li p:before {
+	float: left;
+	display: block;
+	content: counter(itemCount);
+	counter-increment: itemCount;
+	background-color: #474747;
+	color: #B3B3B3;
+	height: 160px;
+	width: 32px;
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	margin-right: 5px;
+}
+	
+#Hurry_OL_Left, #Hurry_OL_Middle, #Hurry_OL_Right {
+	font-size: .6em;
+	text-transform: uppercase;
+	width: 130px;
+	position: absolute;
+	top: 0;	
+}
+	
+#Hurry_OL_Left {
+	left: 0px;
+}
+
+#Hurry_OL_Middle {
+	left: 155px;
+}
+
+#Hurry_OL_Right {
+	left: 315px;
+}
+
+
+/*END OL - Hurry*/
+
+/*END LEFT side*/
+
+.greyText {
+	font-size: .7em;
+	color: #B3B3B3;
+	font-weight: bold;	
+}
+
+.greyUpperText {
+	text-transform: uppercase;
+	font-size: .6em;
+	font-weight: bold;
+	color: #B3B3B3;
+}
+
+.blackText {
+	color: #030303;
+}
+
+.boldUpperText {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+.greyWebLink {
+		color: #B3B3B3;
+}

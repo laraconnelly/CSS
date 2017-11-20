@@ -1,0 +1,90 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@page {
+	size: 8.5in 11in;
+	margin: 1in;
+	size: portrait;
+}
+
+#container {
+	font-family: Times, Georgia, serif;
+	/*position: relative;*/
+}
+
+#playlist img, #tickets img, #howToLogo p {
+	display: none;
+}
+
+p {
+	font-size: 13pt;
+}
+
+#djQbert p, #howTo p {
+	text-indent: 20px;
+}
+
+#djTips_OL {
+	list-style: none;
+	counter-reset: itemCount; /* Initiate a counter */
+	margin-top: 3px;
+}
+
+.djTips_OL_left p:before, .djTips_OL_right p:before {
+	content: counter(itemCount) ') ';
+	counter-increment: itemCount;
+}
+
+h1, h2 {
+	font-size: 15pt;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+#tunesOL p {
+	text-indent: 0;
+}
+
+#tunesOL {
+	list-style: none;
+	counter-reset: itemCount; /* Initiate a counter */
+	margin-bottom: 5px;
+	margin-top: 3px;
+}
+
+#tunesOL p:before {
+	content: counter(itemCount) ') ';
+	counter-increment: itemCount;
+}
+
+#beats {
+	font-style: italic;
+}
+
+#scoreTickets_Left h2 {
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+#scoreTickets_Left ol{
+	list-style: none;
+	counter-reset: itemCount; /* Initiate a counter */
+}
+
+#scoreTickets_Right ol {
+	list-style: none;
+	counter-reset: itemCount 2; /* Initiate a counter to start at 3*/
+}
+
+#scoreTickets_Left p, #scoreTickets_Right p {
+	text-indent: 0;
+}
+
+#scoreTickets_Left p:before, #scoreTickets_Right p:before{
+	content: counter(itemCount) ') ';
+	counter-increment: itemCount;
+}
